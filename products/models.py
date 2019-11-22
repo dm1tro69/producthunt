@@ -18,3 +18,6 @@ class Product(models.Model):
 
     def __str__(self):
         return self.title
+
+    def summary(self):
+        return self.body[:200]
